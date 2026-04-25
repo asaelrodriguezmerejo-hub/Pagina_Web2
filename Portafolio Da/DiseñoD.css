@@ -1,0 +1,102 @@
+nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: white;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--color1);
+}
+.proto {
+    display: flex;
+    padding: 10px 18px;
+    color: white;
+    font-size: medium;
+    background: purple;
+    border-radius: medium;
+    transition: 0.3s ease;
+}
+li:hover{
+    border-radius: 10px;;
+    background: rgba(65, 65, 63, 0.953);
+    color: rgb(255, 255, 255);
+    font-family: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;;
+}
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid purple;
+}
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #000000 0%, #0d0d0d 45%, #1a1a1a 100%);
+}
+.descripcion .texto {
+    max-width: 400px;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
+.descripcion {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 20px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.texto2 {
+    max-width: 400px;
+    line-height: 1.5;
+    text-align: justify;
+    color: white;
+}
+.Prueba {
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.menu {
+    position: relative;
+    cursor: pointer;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(65, 65, 63, 0.953);
+    padding: 10px;
+    border-radius: column;
+}
+.menu:hover .submenu {
+    display: block;
+}
+.submenu li {
+    margin: 8px 15px;
+}
+.submenu li:hover {
+    background-color: rgb(57, 55, 57);
+}
